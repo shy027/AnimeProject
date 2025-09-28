@@ -1,0 +1,56 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "storeFile": "E:/files/new/.p12",
+          "storePassword": "0000001B6363D9ECA4376BFF6E481D872ED7F4CF4366826923EBFDD86E8B25893937ADE977869980715B8B",
+          "keyAlias": "new",
+          "keyPassword": "0000001B8E4B105D81100B11A4C56F95A3ADA253F60F2DDDC249BE5C81D47273CB47EAAD9753E9BAF792B4",
+          "signAlg": "SHA256withECDSA",
+          "profile": "E:/files/智慧课堂Release.p7b",
+          "certpath": "E:/files/TEST1.cer"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "targetSdkVersion": "5.0.5(17)",
+        "compatibleSdkVersion": "5.0.5(17)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
